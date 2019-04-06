@@ -1,0 +1,18 @@
+{
+    "name": "quip-vue",
+    "version": "0.0.1",
+    "description": "quip-vue Quip App",
+    "license": "UNLICENSED",
+    "scripts": {
+        "start": "NODE_ENV=development webpack-dev-server --https",
+        "build": "NODE_ENV=production webpack; create-quip-app pack ./app",
+        "build-dev": "NODE_ENV=development webpack; create-quip-app pack ./app"
+    },
+    "author": "",
+    "devDependencies": {
+        "quip-apps-webpack-config": ">=0.0.39",
+        "vue": "^2.6.10",
+        "vue-loader": "^12.2.2",
+        "vue-template-compiler": "^2.6.10"
+    }
+}

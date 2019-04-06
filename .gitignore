@@ -59,3 +59,7 @@ typings/
 
 # next.js build output
 .next
+
+# Quip
+app/dist
+app/app.ele
