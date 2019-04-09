@@ -25,12 +25,12 @@ export default {
       firstName: quip.apps.getViewingUser().getFirstName(),
       badgeBackgroundColor: quip.apps.ui.ColorMap.RED.VALUE
     };
-  }
+  },
 };
 </script>
 
 
-<style scoped>
+<style scoped lang="less">
 .badge {
   display: flex;
   flex-direction: column;
@@ -45,17 +45,19 @@ export default {
   flex-direction: column;
   align-items: center;
   color: white;
-}
-.header .hello {
-  text-transform: uppercase;
-  font-size: 36px;
-  letter-spacing: 4px;
-  font-weight: bold;
-}
-.header .nameLabel {
-  font-size: 14px;
-  margin-top: -6px;
-  margin-bottom: 10px;
+
+  .hello {
+    text-transform: uppercase;
+    font-size: 36px;
+    letter-spacing: 4px;
+    font-weight: bold;
+  }
+
+  .nameLabel {
+    font-size: 14px;
+    margin-top: -6px;
+    margin-bottom: 10px;
+  }
 }
 
 .firstName {

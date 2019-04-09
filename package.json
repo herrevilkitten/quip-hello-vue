@@ -13,6 +13,7 @@
         "quip-apps-webpack-config": ">=0.0.39",
         "vue": "^2.6.10",
         "vue-loader": "^12.2.2",
+        "vue-style-loader": "^4.1.2",
         "vue-template-compiler": "^2.6.10"
     }
 }
