@@ -4,7 +4,7 @@ This is a port of the [Quip jquery stub](https://github.com/quip/quip-apps/tree/
 ## Installation
 ```
 git clone https://github.com/herrevilkitten/quip-hello-vue
-cd quip-hello-vue
+cd qui-hello-vue
 npm install
 ```
 
