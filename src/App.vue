@@ -13,9 +13,6 @@
     </div>
     <div class="firstName">
       {{firstName}}
-      <div v-for="message in messages" :key="message">
-        {{message}}
-      </div>
     </div>
     <div class="footer"></div>
   </div>
@@ -26,23 +23,7 @@ export default {
   data: function() {
     return {
       firstName: quip.apps.getViewingUser().getFirstName(),
-      badgeBackgroundColor: quip.apps.ui.ColorMap.RED.VALUE,
-      messages: [],
-    };
-  },
-
-  mounted: function() {
-    const ws = new WebSocket("wss://xi-cc-backend.herokuapp.com");
-    ws.onmessage = (event) => {
-      console.log("message", event);
-      let message;
-      try {
-        message = JSON.parse(event.data);
-      } catch (e) {
-        message = event.data;
-      }
-
-      this.messages.push(message.type || 'unknown');
+      badgeBackgroundColor: quip.apps.ui.ColorMap.RED.VALUE
     };
   },
 };
