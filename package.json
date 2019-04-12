@@ -1,14 +1,13 @@
 {
-    "name": "quip-vue",
+    "name": "quip-hello-vue",
     "version": "0.0.1",
-    "description": "quip-vue Quip App",
-    "license": "UNLICENSED",
+    "description": "A Vue SFC port of the Quip jQuery example app",
+    "license": "Apache-2.0",
     "scripts": {
         "start": "NODE_ENV=development webpack-dev-server --https",
-        "build": "NODE_ENV=production webpack; create-quip-app pack ./app",
-        "build-dev": "NODE_ENV=development webpack; create-quip-app pack ./app"
+        "build": "NODE_ENV=development webpack; create-quip-app pack ./app"
     },
-    "author": "",
+    "author": "Eric Kidder",
     "devDependencies": {
         "quip-apps-webpack-config": ">=0.0.39",
         "vue": "^2.6.10",
