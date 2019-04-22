@@ -1,6 +1,10 @@
 # quip-hello-vue
 This is a port of the [Quip jquery stub](https://github.com/quip/quip-apps/tree/master/examples/jquery-stub), using [VueJS](https://vuejs.org/).
 
+## Important Information
+
+Check out my [Getting Started Guide](https://github.com/herrevilkitten/quip-getting-started-vue) for detailed information on what changes are made and important caveats.
+
 ## Installation
 ```
 git clone https://github.com/herrevilkitten/quip-hello-vue
@@ -23,9 +27,3 @@ To build a deployable application, use the command
 npm run build
 ```
 
-## Caveats
-* `webpack.config.js` has been customized.  It uses the default Quip configuration and then modifies it somewhat.  This means that if Quip changes the defaults, this file may need to be updated.
-
-* With everything in Single File Components, `app.css` is not used (and is not in the manifest.)  If an external stylesheet is needed, the manifest may need to be updated.
-
-* I have only put in support for LESS processing, because it was already listed in `package-lock.json`.  Adding SASS (or other processors) shouldn't be that difficult.

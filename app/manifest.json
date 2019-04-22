@@ -7,5 +7,7 @@
     "sizing_mode": "fit_content",
     "initial_height": 300,
     "initial_width": 300,
-    "js_files": ["dist/app.js"]
+    "js_files": [
+        "dist/app.js"
+    ]
 }
